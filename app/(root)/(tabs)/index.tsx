@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
+import { Home } from "lucide-react-native";
 
 export default function Index() {
   return (
@@ -10,7 +11,10 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="font-bold text-lg my-10">Home</Text>
+      <View className="flex">
+        <Home size={16} />
+        <Text className="text-lg my-10 font-rubik-extrabold">Home</Text>
+      </View>
       <Link href="/sign-in">Sign In</Link>
       <Link href="/explore">Explore</Link>
       <Link href="/profile">Profile</Link>
